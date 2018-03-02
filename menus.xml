@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Top menu item -->
+        <menuitem name="Retail Insurance" id="ng_insurance_retail_root_menu" web_icon="ng_insurance_retail,static/description/icon.jpeg"/>
+
+        <!-- menu categories -->
+        <menuitem name="Subscribers" id="ng_insurance_retail_menu_1" parent="ng_insurance_retail_root_menu"
+            sequence="1"/>
+        <menuitem name="Policies" id="ng_insurance_retail_menu_2" parent="ng_insurance_retail_root_menu"
+            sequence="2"/>
+
+        <!-- actions -->
+        <menuitem name="Policy Holder" id="ng_insurance_retail_policy_holder_menu" parent="ng_insurance_retail_menu_1" 
+            action="ng_insurance_retail_policy_holder_actions" sequence="1"/>
+
+        <menuitem name="Policies" id="ng_insurance_retail_policy_menu" parent="ng_insurance_retail_menu_2" 
+            action="ng_insurance_retail_policy_action" sequence="2"/>
+
+        <menuitem name="Types" id="ng_insurance_retail_policy_type_menu" parent="ng_insurance_retail_menu_2" 
+            action="ng_insurance_retail_policy_type_action" sequence="3"/>
+    </data>
+</odoo>

@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ng_insurance_retail_ng_insurance_retail,ng_insurance_retail.ng_insurance_retail,model_ng_insurance_retail_ng_insurance_retail,,1,0,0,0

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="website_sale.menu_shop" model="website.menu">
+             <field name="name">Subscribers</field>
+         </record>
+
+        <record id="ng_insurance_retail_portal_new_sub_menu" model="website.menu">
+            <field name="name">New Subscribers</field>
+            <field name="url">/subscriber/new</field>
+            <field name="sequence">1</field>
+            <field name="parent_id" ref="website_sale.menu_shop" />
+        </record>
+
+        <record id="website.menu_homepage" model="website.menu">
+            <field name="name">Policies</field>
+            <field name="url">/</field>
+            <field name="sequence">2</field>
+            <!-- <field name="parent_id" ref="website.menu_homepage" /> -->
+        </record>
+
+        <record id="ng_saas_portal_clients_menu" model="website.menu">
+            <field name="name">My Client(s) Database</field>
+            <field name="url">/dashboard/clients</field>
+            <field name="sequence">3</field>
+            <!-- <field name="parent_id" ref="sythil_saas_server.saas_portal_menu"/> -->
+        </record>
+
+    </data>
+</odoo>

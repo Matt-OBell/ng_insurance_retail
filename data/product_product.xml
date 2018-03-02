@@ -1,0 +1,49 @@
+<odoo>
+    <data noupdate="1">
+        <record id="ng_policy_01" model="product.product">
+            <field name="name">Motor</field>
+            <field name="policy">1</field>
+            <field name="type">service</field>
+        </record>
+        <record id="ng_policy_02" model="product.product">
+            <field name="name">Fire</field>
+            <field name="policy">1</field>
+            <field name="type">service</field>
+        </record>
+        <record id="ng_policy_03" model="product.product">
+            <field name="name">Burglary</field>
+            <field name="policy">1</field>
+            <field name="type">service</field>
+        </record>
+        <record id="ng_policy_04" model="product.product">
+            <field name="name">Workmen</field>
+            <field name="policy">1</field>
+            <field name="type">service</field>
+        </record>
+        <record id="ng_policy_05" model="product.product">
+            <field name="name">Compensation</field>
+            <field name="policy">1</field>
+            <field name="type">service</field>
+        </record>
+        <record id="ng_policy_6" model="product.product">
+            <field name="name">Money Insurance</field>
+            <field name="policy">1</field>
+            <field name="type">service</field>
+        </record>
+        <record id="ng_policy_07" model="product.product">
+            <field name="name">Householder and House Owner</field>
+            <field name="policy">1</field>
+            <field name="type">service</field>
+        </record>
+        <record id="ng_policy_08" model="product.product">
+            <field name="name">All Risks</field>
+            <field name="policy">1</field>
+            <field name="type">service</field>
+        </record>
+        <record id="ng_policy_09" model="product.product">
+            <field name="name">General  Third Party Liability</field>
+            <field name="policy">1</field>
+            <field name="type">service</field>
+        </record>
+    </data>
+</odoo>

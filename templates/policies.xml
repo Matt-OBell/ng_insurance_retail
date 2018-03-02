@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="policies" name="Insurance Policy">
+            <t t-call="website.layout">
+                <div class="container" style="margin:40px">
+                    <div class="row">
+                        <t t-foreach="policies.filtered(lambda r: r.website_published==true)" t-as="policy">
+                            <div class="col-md-5 col-sm-offset-1">
+                                <div class="row">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"><span t-field="policy.name"/> (<span t-field="policy.type_id"/>)</h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <span t-raw="policy.type_id.description"/> 
+                                                <a t-attf-tid="#{policy.id}" type="button" typ="btn" class="btn btn-sm btn-link">more... </a>
+                                                <span t-raw="policy.type_id.features"  t-attf-class="#{policy.id}" style="display:none"/>
+                                                <a t-attf-tid="#{policy.id}" type="button" typ="less" class="btn btn-sm btn-link" 
+                                                    style="display:none">less... </a>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <div class="row">
+                                                    <a t-attf-href="/shop/product/#{policy.slug}" class="btn btn-info" style="float:right;margin:0 15px 0 0">Buy Now</a></div>
+                                            </div>
+                                            </div>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                   <!--  <script>
+                        function toggle_read_more(event){
+                            console.log(event);
+                        }
+                    </script> -->
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

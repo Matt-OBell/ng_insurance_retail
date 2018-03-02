@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="index_page" name="Insurance Retail">
+            <t t-call="website.layout">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-offset-2 _form">
+                            <t t-call="ng_insurance_retail.subscriber_form"/>
+                        </div>
+                    </div>
+               
+            </div>
+            </t>
+        </template>
+    </data>
+</odoo>

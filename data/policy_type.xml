@@ -1,0 +1,27 @@
+<odoo>
+    <data noupdate="1">
+        <record id="ng_policy_type_01" model="ng_insurance_retail.policy.type">
+            <field name="name">Long-Term Disability Insurance</field>
+            <field name="features"></field>
+        </record>
+
+        <record id="ng_policy_type_02" model="ng_insurance_retail.policy.type">
+            <field name="name">Life Insurance</field>
+            <field name="features"></field>
+        </record>
+
+        <record id="ng_policy_type_03" model="ng_insurance_retail.policy.type">
+            <field name="name">Health Insurance</field>
+            <field name="features"></field>
+        </record>
+        <record id="ng_policy_type_04" model="ng_insurance_retail.policy.type">
+            <field name="name">Homeowners Insurance</field>
+            <field name="features"></field>
+        </record>
+        <record id="ng_policy_type_05" model="ng_insurance_retail.policy.type">
+            <field name="name">Automobile Insurance</field>
+            <field name="features"></field>
+        </record>
+        
+    </data>
+</odoo>

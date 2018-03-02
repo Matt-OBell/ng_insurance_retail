@@ -1,0 +1,87 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="ng_insurance_retail_policy_policy_view">
+        <field name="name">product_product_policy_view</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='notes']" position="before">
+                <page name="Policies" string="Policy Type">
+                    <group>
+                        <group>
+                            <field name="premium_type"/>
+                            <field name="type_id"/>
+                        </group>
+                        <group>
+                            <field name="policy_period"/>
+                            <field name="policy"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="ng_insurance_retail_policy_list">
+        <field name="name">Policy tree views</field>
+        <field name="model">product.product</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <!-- <field name="value"/> -->
+                <!-- <field name="value2"/> -->
+            </tree>
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="ng_insurance_retail.list">
+        <field name="name">ng_insurance_retail list</field>
+        <field name="model">ng_insurance_retail.ng_insurance_retail</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="value"/>
+                <field name="value2"/>
+            </tree>
+        </field>
+    </record>
+    <!-- policy type -->
+    <record model="ir.ui.view" id="ng_insurance_retail_policy_type_list">
+        <field name="name">ng_insurance_retail_policy_type_list</field>
+        <field name="model">ng_insurance_retail.policy.type</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <!-- <field name="features"/> -->
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="ng_insurance_retail_policy_type_form">
+        <field name="name">ng_insurance_retail_policy_type_form</field>
+        <field name="model">ng_insurance_retail.policy.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="features"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <!-- actions opening views on models -->
+    
+    <record model="ir.actions.act_window" id="ng_insurance_retail.action_window">
+        <field name="name">ng_insurance_retail window</field>
+        <field name="res_model">ng_insurance_retail.ng_insurance_retail</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+  </data>
+</odoo>

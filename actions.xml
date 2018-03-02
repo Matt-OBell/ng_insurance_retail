@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+     <data>
+        <!-- policy holder -->
+        <record model="ir.actions.act_window" id="ng_insurance_retail_policy_holder_actions">
+            <field name="name">Policy Holder</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('ng_insurance_retail_policy_holder_tree')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('ng_insurance_retail_policy_holder_form')})
+            ]"/>
+        </record>
+
+        <!-- policy action -->
+        <record model="ir.actions.act_window" id="ng_insurance_retail_policy_action">
+            <field name="name">Policy</field>
+            <field name="res_model">product.product</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('ng_insurance_retail_policy_list')})
+            ]"/>
+        </record> 
+        <!-- policy type -->
+        <record model="ir.actions.act_window" id="ng_insurance_retail_policy_type_action">
+            <field name="name">Policy Type</field>
+            <field name="res_model">ng_insurance_retail.policy.type</field>
+            <field name="view_mode">tree,form</field>
+        </record> 
+    </data>
+</odoo>

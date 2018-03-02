@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="ng_insurance_retail_assets" name="ng_insurance_retail_assets" inherit_id="website.assets_frontend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/css" href="/ng_insurance_retail/static/css/min.css"/>
+                <script type="text/javascript" src="/ng_insurance_retail/static/js/bootstrap.js"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
