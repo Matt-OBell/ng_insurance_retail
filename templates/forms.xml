@@ -17,13 +17,13 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="firstName">First Name:</label>
-                            <input type="text" class="form-control" name="first_name" placeholder="First Name"/>
+                            <input type="text" class="form-control" name="first_name" placeholder="First Name" required="1"/>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="lastName">Last Name:</label>
-                            <input type="text" class="form-control" name="last_name" placeholder="last Name"/>
+                            <input type="text" class="form-control" name="last_name" placeholder="last Name" required="1"/>
                         </div>
                     </div>
                 </div>
@@ -33,13 +33,13 @@
                     <div class="col-md-6">
                          <div class="form-group">
                             <label for="emailAddress">Email Address:</label>
-                            <input type="text" class="form-control"  name="email" placeholder="Email Address"/>
+                            <input type="text" class="form-control"  name="email" placeholder="Email Address" required="1"/>
                         </div>
                     </div>
                     <div class="col-md-6">
                          <div class="form-group">
                             <label for="phoneno">Phone No:</label>
-                            <input type="text" class="form-control" name="phone" placeholder="Phone No"/>
+                            <input type="text" class="form-control" name="phone" placeholder="Phone No" required="1"/>
                         </div>
                     </div>
                        
@@ -59,7 +59,7 @@
                     <div class="col-md-6">
                          <div class="form-group">
                             <label for="maritalStatus">Marital Status:</label>
-                            <input type="text" class="form-control" name="marital_status" placeholder="Marital Status"/>
+                            <input type="text" class="form-control" name="marital_status" placeholder="Marital Status" required="1"/>
                         </div>
                     </div>
                        
@@ -70,13 +70,13 @@
                     <div class="col-md-6">
                          <div class="form-group">
                             <label for="occupation">Occupation:</label>
-                            <input type="text" class="form-control" name="occupation" placeholder="Occupation"/>
+                            <input type="text" class="form-control" name="occupation" placeholder="Occupation" required="1"/>
                         </div>
                     </div>
                     <div class="col-md-6">
                          <div class="form-group">
                             <label for="religion">Religion:</label>
-                            <input type="text" class="form-control" name="religion" placeholder="Religion"/>
+                            <input type="text" class="form-control" name="religion" placeholder="Religion" required="1"/>
                         </div>
                     </div>
                        
@@ -86,13 +86,13 @@
                     <div class="col-md-6">
                          <div class="form-group">
                             <label for="exampleInputPassword1">Address:</label>
-                            <input type="text" class="form-control" name="address" placeholder="Address"/>
+                            <input type="text" class="form-control" name="address" placeholder="Address" required="1"/>
                         </div>
                     </div>
                     <div class="col-md-6">
                          <div class="form-group">
                             <label for="lga">LGA:</label>
-                            <input type="text" class="form-control" name="lga" placeholder="LGA"/>
+                            <input type="text" class="form-control" name="lga" placeholder="LGA" required="1"/>
                         </div>
                     </div>
                 </div>
@@ -101,13 +101,13 @@
                     <div class="col-md-6">
                          <div class="form-group">
                             <label for="policyholderType">Policy Holder Type:</label>
-                            <input type="text" class="form-control" name="policy_holder_type" placeholder="Policy Holder Type"/>
+                            <input type="text" class="form-control" name="policy_holder_type" placeholder="Policy Holder Type" required="1"/>
                         </div>
                     </div>
                     <div class="col-md-6">
                          <div class="form-group">
                             <label for="agent">Agent ID:</label>
-                            <input type="text" class="form-control" name="Agent" placeholder="Agent ID"/>
+                            <input type="text" class="form-control" name="Agent" placeholder="Agent ID" required="1"/>
                         </div>
                     </div>
                 </div>
