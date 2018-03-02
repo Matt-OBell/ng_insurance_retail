@@ -2,7 +2,7 @@
 <odoo>
     <data>
         <!-- Top menu item -->
-        <menuitem name="Retail Insurance" id="ng_insurance_retail_root_menu" web_icon="ng_insurance_retail,static/description/icon.jpeg"/>
+        <menuitem name="Retail Insurance" id="ng_insurance_retail_root_menu" web_icon="ng_insurance_retail,static/description/icon.png"/>
 
         <!-- menu categories -->
         <menuitem name="Subscribers" id="ng_insurance_retail_menu_1" parent="ng_insurance_retail_root_menu"
