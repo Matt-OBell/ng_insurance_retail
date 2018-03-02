@@ -64,7 +64,7 @@ class NgInsuranceRetail(http.Controller):
         ]
         total =  len(params)
         values = {param:kw.get(param) for param in params if kw.get(param)}
-        if total >=5:
+        if total < 5:
             # die minute validation
             error = 'some required field are missing'
             # print '***************', error, values
