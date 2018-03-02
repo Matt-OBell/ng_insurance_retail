@@ -73,10 +73,10 @@ class NgInsuranceRetail(http.Controller):
         template_user_id = literal_eval(config_param.sudo().get_param('auth_signup.template_user_id', 'False'))
         template_user = view.env['res.users'].sudo().browse(template_user_id)
         name =  '{} {}'.format(values.get('first_name'), values.get('last_name'))
-        title =  view.env['res.partner.title'].name_search(name=values.get('title'))
+        # title =  view.env['res.partner.title'].name_search(name=values.get('title'))
         res_partner =  view.env['res.partner'].sudo().create({
             'name' : name,
-            'title' : title[0][0] or False,
+            # 'title' :  False,
             'occupation': values.get('occupation'),
             'religion': values.get('religion'),
             'phone': values.get('phone'),
